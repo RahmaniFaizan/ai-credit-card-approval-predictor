@@ -1,0 +1,6 @@
+{
+  "name": "AI Credit Card Approval Predictor",
+  "description": "A simulation tool predicting credit card approval, credit limit, and key TransUnion CIBIL score drivers using a banking underwriting pipeline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
