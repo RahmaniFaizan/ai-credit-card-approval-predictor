@@ -210,7 +210,7 @@ export const Step0Landing: React.FC<Step0LandingProps> = ({ onStart }) => {
                     tickLine={false}
                   />
                   <Tooltip
-                    formatter={(val, name, props) => [
+                    formatter={(val, _name, props) => [
                       `${Number(val)}% (${props?.payload?.approved || 0} of ${props?.payload?.total || 0} approved)`,
                       'Approval Rate',
                     ]}

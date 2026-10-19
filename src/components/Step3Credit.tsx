@@ -9,10 +9,9 @@ import {
   AlertTriangle,
   ShieldCheck,
   CreditCard,
-  Building,
 } from 'lucide-react';
 import { ApplicantProfile, ExistingLoan, LoanType, CibilScoreBand } from '../types';
-import { formatRupee, parseRupeeInput } from '../utils/scoringEngine';
+import { parseRupeeInput } from '../utils/scoringEngine';
 
 interface Step3CreditProps {
   formData: ApplicantProfile;
@@ -28,7 +27,6 @@ export const Step3Credit: React.FC<Step3CreditProps> = ({
   onBack,
 }) => {
   const [showFoirTooltip, setShowFoirTooltip] = useState(false);
-  const [showAgeTooltip, setShowAgeTooltip] = useState(false);
   const [showCibilTooltip, setShowCibilTooltip] = useState(false);
 
   // Add existing loan row

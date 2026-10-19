@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, ArrowRight, ArrowLeft, CheckCircle } from 'lucide-react';
+import { User, ArrowRight, ArrowLeft } from 'lucide-react';
 import { ApplicantProfile, EducationLevel, HousingType, MaritalStatus } from '../types';
 
 interface Step1PersonalProps {

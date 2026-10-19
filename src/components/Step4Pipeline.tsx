@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Cpu, CheckCircle2, Sparkles, Database, Layers, ArrowLeft, ShieldCheck, FileSearch } from 'lucide-react';
+import { Cpu, CheckCircle2, Sparkles, Database, Layers, ArrowLeft, FileSearch } from 'lucide-react';
 
 interface Step4PipelineProps {
   onComplete: () => void;

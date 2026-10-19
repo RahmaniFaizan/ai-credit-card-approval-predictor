@@ -8,19 +8,31 @@ echo ========================================================
 echo     FAIZAN BANK - AI CREDIT CARD PREDICTOR MANAGER
 echo ========================================================
 echo  [1] Start Development Server (http://localhost:3000)
-echo  [2] Build Production Bundle (dist/)
-echo  [3] Push Updates to GitHub
-echo  [4] Exit
+echo  [2] Start AI API Server (http://localhost:3001)
+echo  [3] Build Production Bundle (dist/)
+echo  [4] Push Updates to GitHub
+echo  [5] Exit
 echo ========================================================
-set /p choice="Enter option (1-4) [Default 1]: "
+set /p choice="Enter option (1-5) [Default 1]: "
 
 if "%choice%"=="" set choice=1
 if "%choice%"=="1" goto run_dev
-if "%choice%"=="2" goto build_prod
-if "%choice%"=="3" goto push_git
-if "%choice%"=="4" goto exit_cmd
+if "%choice%"=="2" goto run_api
+if "%choice%"=="3" goto build_prod
+if "%choice%"=="4" goto push_git
+if "%choice%"=="5" goto exit_cmd
 echo Invalid selection.
 timeout /t 2 >nul
+goto menu
+
+:run_api
+cls
+echo ========================================================
+echo Starting AI API server on http://localhost:3001 ...
+echo Add GEMINI_API_KEY to .env before requesting analysis.
+echo ========================================================
+call npm run server
+pause
 goto menu
 
 :run_dev

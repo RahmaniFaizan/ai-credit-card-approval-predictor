@@ -15,11 +15,11 @@ import {
   Gift,
   Lock,
   LineChart as LineChartIcon,
-  Award,
 } from 'lucide-react';
 import { ApplicantProfile, PredictionResult } from '../types';
 import { formatRupee } from '../utils/scoringEngine';
 import { predictApproval } from '../utils/scoringEngine';
+import { AiRiskAnalysis } from './AiRiskAnalysis';
 import {
   LineChart,
   Line,
@@ -52,7 +52,6 @@ export const Step5Results: React.FC<Step5ResultsProps> = ({
     cardVariant,
     dynamicAprPercent,
     monthlyAprPercent,
-    annualFee,
     atmCashFreeDays,
     scoreBands,
     similarApplicantsApprovalRate,
@@ -324,6 +323,8 @@ export const Step5Results: React.FC<Step5ResultsProps> = ({
           </div>
         )}
       </div>
+
+      <AiRiskAnalysis profile={formData} result={result} />
 
       {/* 6-STAGE BANKING VERIFICATION AUDIT REPORT */}
       <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 interface HeaderProps {
   currentStep: number; // 0 to 5

@@ -45,7 +45,6 @@ export function predictApproval(profile: ApplicantProfile, skipSimilarityCheck =
     dependents,
     salaryPaymentMode = 'Bank Transfer',
     employerCategory = 'Tier 1 / Super Corporate (MNC/Listed)',
-    cibilScoreBand = isNewToCredit ? 'No Score / New to Credit' : '750 - 779',
     hasSettledOrWrittenOffLoans = false,
     bouncedEmiInLast6Months = false,
     inquiriesLast30Days = Math.min(recentEnquiries, 1),
