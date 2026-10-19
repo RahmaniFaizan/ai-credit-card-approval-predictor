@@ -193,12 +193,7 @@ The simulation uses an internal dataset of 180 synthetic profiles reflecting pri
 ```text
 ai-credit-card-approval-predictor/
 ├── server.ts                        # Express API proxy for the Gemini-powered analysis
-├── assets/
-│   └── linkedin_media/
-│       ├── 1_Dashboard_Cover.jpg
-│       ├── 2_Underwriting_Pipeline.jpg
-│       ├── 3_Mobile_Decision_Approved.jpg
-│       └── demo_animated_presentation.gif
+
 ├── src/
 │   ├── components/
 │   │   ├── Header.tsx              # Navigation bar and underwriting preset buttons
@@ -304,16 +299,6 @@ The launcher provides an interactive menu:
 - [5] Exit
 
 For a production-style local run, first build the frontend with `npm run build`, then run `npm run server`. Express serves `dist/` as well as the `/api/risk-analysis` endpoint.
-
----
-
-## Project Assets
-
-The `assets/linkedin_media/` directory contains visual presentation materials:
-- `1_Dashboard_Cover.jpg`: Complete approval dashboard overview.
-- `2_Underwriting_Pipeline.jpg`: Underwriting verification audit screen.
-- `3_Mobile_Decision_Approved.jpg`: Mobile responsive decision view.
-- `demo_animated_presentation.gif`: Animated walkthrough of the application workflow.
 
 ---
 
