@@ -1,7 +1,7 @@
 import React from 'react';
 import { Briefcase, ArrowRight, ArrowLeft, Building2, Wallet } from 'lucide-react';
 import { ApplicantProfile, EmploymentType, EmployerCategory, SalaryPaymentMode } from '../types';
-import { formatRupee, parseRupeeInput } from '../utils/formatters';
+import { formatRupee, parseRupeeInput } from '../utils/scoringEngine';
 
 interface Step2EmploymentProps {
   formData: ApplicantProfile;

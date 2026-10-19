@@ -793,3 +793,25 @@ function computeSimilarApprovalRate(userIncome: number, userCreditAgeMonths: num
   const approvedCount = matching.filter((d) => d.outcome === 'Approved').length;
   return Math.round((approvedCount / matching.length) * 100);
 }
+
+/**
+ * Rupee Formatter Utility
+ */
+export function formatRupee(amount: number): string {
+  if (isNaN(amount) || amount === null || amount === undefined) {
+    return '₹0';
+  }
+  const rounded = Math.round(amount);
+  const isNegative = rounded < 0;
+  const absVal = Math.abs(rounded);
+  const formatted = new Intl.NumberFormat('en-IN', {
+    maximumFractionDigits: 0,
+  }).format(absVal);
+  return `${isNegative ? '-' : ''}₹${formatted}`;
+}
+
+export function parseRupeeInput(val: string): number {
+  const cleaned = val.replace(/[^0-9]/g, '');
+  return cleaned ? parseInt(cleaned, 10) : 0;
+}
+

@@ -12,7 +12,7 @@ import {
   Building,
 } from 'lucide-react';
 import { ApplicantProfile, ExistingLoan, LoanType, CibilScoreBand } from '../types';
-import { formatRupee, parseRupeeInput } from '../utils/formatters';
+import { formatRupee, parseRupeeInput } from '../utils/scoringEngine';
 
 interface Step3CreditProps {
   formData: ApplicantProfile;

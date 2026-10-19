@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { UserCheck, Cpu, CreditCard, ArrowRight, TrendingUp, BarChart2, ShieldAlert, Award } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, CartesianGrid } from 'recharts';
 import { getSyntheticDataset } from '../utils/scoringEngine';
-import { formatRupee } from '../utils/formatters';
+import { formatRupee } from '../utils/scoringEngine';
 
 interface Step0LandingProps {
   onStart: () => void;

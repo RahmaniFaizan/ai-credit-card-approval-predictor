@@ -18,7 +18,7 @@ import {
   Award,
 } from 'lucide-react';
 import { ApplicantProfile, PredictionResult } from '../types';
-import { formatRupee } from '../utils/formatters';
+import { formatRupee } from '../utils/scoringEngine';
 import { predictApproval } from '../utils/scoringEngine';
 import {
   LineChart,
