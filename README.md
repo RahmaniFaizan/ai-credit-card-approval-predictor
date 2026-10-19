@@ -25,7 +25,6 @@ A simulation platform that models retail banking underwriting policies, credit l
   - [Installation](#installation)
   - [Available Scripts](#available-scripts)
   - [Windows Launcher (run.cmd)](#windows-launcher-runcmd)
-- [Project Assets](#project-assets)
 - [Change Log](#change-log)
 - [Author](#author)
 
@@ -193,7 +192,6 @@ The simulation uses an internal dataset of 180 synthetic profiles reflecting pri
 ```text
 ai-credit-card-approval-predictor/
 ├── server.ts                        # Express API proxy for the Gemini-powered analysis
-
 ├── src/
 │   ├── components/
 │   │   ├── Header.tsx              # Navigation bar and underwriting preset buttons
@@ -312,7 +310,7 @@ For a production-style local run, first build the frontend with `npm run build`,
 - Added safe `.env.example` configuration for `GEMINI_API_KEY` and optional `GEMINI_MODEL`; real `.env` files remain Git-ignored.
 - Updated the Windows launcher for the separate AI API process.
 - Raised the documented and declared Node.js requirement to 20+ to match the Google Gen AI SDK.
-- Removed unused animation and PostCSS dependencies, unused component imports/state, and unused score-engine destructuring; the portfolio media remains because it is an intentionally documented showcase asset.
+- Removed unused animation and PostCSS dependencies, unused component imports/state, and unused score-engine destructuring.
 - Added a public-repository description, GitHub metadata, and production-ready ignore rules for secrets, generated output, editor files, and deployment artifacts.
 - Documented the deterministic-versus-generative boundary, the transmitted fields, security constraints, setup instructions, and production-style run procedure.
 
